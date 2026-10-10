@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kmtronic-antenna-array-controller"
+version = "0.1.0"
+description = "Python desktop controller for a KMTronic relay-based 9-circle antenna array"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "ON4IQ" }
+]
+keywords = ["kmtronic", "antenna", "relay", "radio", "tkinter", "python"]
+
+[project.urls]
+Homepage = "https://github.com/johanvandevelde99-arch/kmtronic-antenna-array-controller"
+Repository = "https://github.com/johanvandevelde99-arch/kmtronic-antenna-array-controller"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
